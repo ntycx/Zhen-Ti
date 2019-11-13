@@ -7,9 +7,9 @@
 #include<vector>
 using namespace std;
 int main(){
-	vector<int> num;//numÊý×éÓÃÀ´´æ·ÅÃ¿Ò»Î» 
-	int n,m,sum=0;//sumÓÃÀ´Í³¼ÆÎ»Êý
-	printf("ÇëÊäÈëÒ»¸ö²»¶àÓÚ5Î»µÄÕýÕûÊý:"); 
+	vector<int> num;//num数组用来存放每一位 
+	int n,m,sum=0;//sum用来统计位数
+	printf("请输入一个不多于5位的正整数:"); 
 	scanf("%d",&n);
 	while(n!=0){
 		m=n%10;
@@ -17,7 +17,7 @@ int main(){
 		sum++;
 		n/=10;
 	}
-	printf("ÕâÊÇÒ»¸ö%dÎ»Êý\n",sum);
+	printf("这是一个%d位数\n",sum);
 	for(int i=num.size()-1;i>=0;i--){
 		printf("%d",num[i]);
 		if(i!=0)printf(",");
