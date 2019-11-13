@@ -16,7 +16,7 @@ int main(){
 			}
 		}
 	}
-	printf("排序后的字符为：");
+	printf("排序后的字符为：\n");
 	for(int i=0;i<50;i++){
 		printf("%c",a[i]);
 		if(i!=49)printf(" ");
