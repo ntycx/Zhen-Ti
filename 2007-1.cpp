@@ -10,7 +10,12 @@ int main(){
 	char ch;
 	printf("请输入一个小写字符:");
 	scanf("%c",&ch);
-	ch-=32;
-	printf("转换后字符为:%c\n",ch);
-	return 0; 
+	if(ch>='a'&&ch<='z'){
+		ch-=32;
+		printf("转换后字符为:%c\n",ch);
+	}
+	else{
+		printf("输入错误！");
+	}
+	return 0;
 }
