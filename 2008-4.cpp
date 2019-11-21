@@ -9,11 +9,11 @@ int main(){
 		}
 	}
 	int max=0,row,col;
-	bool flag;
+	bool flag;//判断是否是鞍点 
 	for(int i=0;i<10;i++){
+		max=0;
+		flag=true;
 		for(int j=0;j<10;j++){
-			max=0;
-			flag=true;
 			if(a[i][j]>max){
 				max=a[i][j];
 				row=i;
@@ -26,7 +26,7 @@ int main(){
 				break;
 			}
 		}
-		if(flag==true)printf("%a[%d][%d]=%d为鞍点\n",row,col,a[col][row]);
+		if(flag==true)printf("a[%d][%d]=%d为鞍点\n",row,col,a[col][row]);
 	}
 	return 0;
 }
