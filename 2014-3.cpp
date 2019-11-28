@@ -47,5 +47,6 @@ int main(){
 		printf("学号:%d,姓名:%s,数学成绩:%d,语文成绩:%d,英语成绩:%d,总分:%d,名次:%d\n",stu[i].number,stu[i].name,stu[i].shuxue,stu[i].yuwen,stu[i].yingyu,stu[i].zongfen,stu[i].paiming);
 		fprintf(fp,"学号:%d,姓名:%s,数学成绩:%d,语文成绩:%d,英语成绩:%d,总分:%d,名次:%d\n",stu[i].number,stu[i].name,stu[i].shuxue,stu[i].yuwen,stu[i].yingyu,stu[i].zongfen,stu[i].paiming);
 	}
+	fclose(fp);
 	return 0;
 }
