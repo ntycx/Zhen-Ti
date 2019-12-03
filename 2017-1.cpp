@@ -25,6 +25,6 @@ int main(){
 	for(int i=0;i<=n;i++){
 		fprintf(fp,"%lf ",f(i,x));
 	}
-	
+	fclose(fp);
 	return 0;
 }
